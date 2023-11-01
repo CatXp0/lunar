@@ -25,6 +25,10 @@ class ProductSection
                 'handle' => 'channels',
                 'component' => 'hub.components.products.editing.availability',
             ],
+            [
+                'handle' => 'channels',
+                'component' => 'hub.components.products.editing.reviews',
+            ],
             // [
             //     'handle' => 'customer-groups',
             //     'component' => 'hub.components.products.editing.customer-groups',

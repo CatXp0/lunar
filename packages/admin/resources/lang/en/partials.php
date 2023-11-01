@@ -20,6 +20,10 @@ return [
     'products.associations.add_association' => 'Add association',
     'products.associations.up-sell_selecting_products' => 'Add Up-sell products by searching above and selecting products.',
     /**
+     * Reviews.
+     */
+    'products.reviews.heading' => 'Reviews',
+    /**
      * Availability.
      */
     'availability.heading' => 'Availability',
