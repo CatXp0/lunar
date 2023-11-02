@@ -78,6 +78,7 @@ return [
      * Reviews listing.
      */
     'reviews.index.title' => 'Reviews',
+    'reviews.index.create_btn' => 'Create Product Review',
     /**
      * Product type editing.
      */

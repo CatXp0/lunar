@@ -1,6 +1,6 @@
 <?php
 
-namespace Lunar\Hub\Http\Livewire\Pages\Products\ProductReviews;
+namespace Lunar\Hub\Http\Livewire\Pages\Products\Reviews;
 
 use Livewire\Component;
 
