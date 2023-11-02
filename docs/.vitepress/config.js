@@ -92,6 +92,7 @@ export default defineConfig({
                         {text: 'Customers', link: '/core/reference/customers'},
                         {text: 'Discounts', link: '/core/reference/discounts'},
                         {text: 'Images', link: '/core/reference/images'},
+                        {text: 'Reviews', link: '/core/reference/reviews'},
                         {text: 'Languages', link: '/core/reference/languages'},
                         {text: 'Orders', link: '/core/reference/orders'},
                         {text: 'Payments', link: '/core/reference/payments'},

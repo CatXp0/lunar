@@ -53,6 +53,7 @@ return [
     'search-results.none' => 'We were unable to find any results based on your search.',
     'addon.not_licensed' => 'This addon has not been licensed, please check the config for this addon.',
     'product.no-images-associated' => 'Product does not have any images associated',
+    'product.no-reviews-associated' => 'Product does not have any reviews associated',
     'products.product_restored' => 'Product restored',
     'tax_class.saved' => 'Tax class saved',
     'tax_class.deleted' => 'Tax class deleted',

@@ -75,6 +75,10 @@ return [
     'product-types.index.title' => 'Product Types',
     'product-types.index.create_btn' => 'Create Product Type',
     /**
+     * Reviews listing.
+     */
+    'reviews.index.title' => 'Reviews',
+    /**
      * Product type editing.
      */
     'product-types.show.updated_message' => 'Product Type updated',

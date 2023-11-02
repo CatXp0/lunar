@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Carbon;
 use Lunar\Base\BaseModel;
 use Lunar\Base\Casts\AsAttributeData;
 use Lunar\Base\Traits\HasChannels;
@@ -29,9 +30,11 @@ use Spatie\MediaLibrary\HasMedia as SpatieHasMedia;
  * @property int $product_type_id
  * @property string $status
  * @property array $attribute_data
- * @property ?\Illuminate\Support\Carbon $created_at
- * @property ?\Illuminate\Support\Carbon $updated_at
- * @property ?\Illuminate\Support\Carbon $deleted_at
+ * @property float $rating
+ * @property float $real_rating
+ * @property ?Carbon $created_at
+ * @property ?Carbon $updated_at
+ * @property ?Carbon $deleted_at
  */
 class Product extends BaseModel implements SpatieHasMedia
 {
@@ -115,6 +118,16 @@ class Product extends BaseModel implements SpatieHasMedia
     public function variants()
     {
         return $this->hasMany(ProductVariant::class);
+    }
+
+    /**
+     * Return the product reviews relation.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function reviews()
+    {
+        return $this->hasMany(ProductReview::class);
     }
 
     /**

@@ -84,6 +84,14 @@ final class SidebarMenu
 
         $productGroup->addItem(function ($menuItem) {
             $menuItem
+                ->name(__('adminhub::menu.sidebar.reviews'))
+                ->handle('hub.reviews')
+                ->gate('catalogue:manage-products')
+                ->route('hub.reviews.index');
+        });
+
+        $productGroup->addItem(function ($menuItem) {
+            $menuItem
                 ->name(__('adminhub::menu.sidebar.brands'))
                 ->handle('hub.brands')
                 ->gate('catalogue:manage-products')

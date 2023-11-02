@@ -5,6 +5,7 @@ return [
     'sidebar.catalogue-manager' => 'Catalogue Manager',
     'sidebar.products' => 'Products',
     'sidebar.product-types' => 'Product Types',
+    'sidebar.reviews' => 'Product Reviews',
     'sidebar.brands' => 'Brands',
     'sidebar.collections' => 'Collections',
     'sidebar.order-processing' => 'Order Processing',

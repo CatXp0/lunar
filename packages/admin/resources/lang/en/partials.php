@@ -23,6 +23,7 @@ return [
      * Reviews.
      */
     'products.reviews.heading' => 'Reviews',
+    'review-manager.no_results' => 'No reviews exist for this product, add your first review above.',
     /**
      * Availability.
      */
