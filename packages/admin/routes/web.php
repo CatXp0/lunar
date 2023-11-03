@@ -44,6 +44,10 @@ Route::group([
         ], __DIR__.'/includes/product-types.php');
 
         Route::group([
+            'prefix' => 'reviews',
+        ], __DIR__.'/includes/reviews.php');
+
+        Route::group([
             'prefix' => 'orders',
         ], __DIR__.'/includes/orders.php');
 
