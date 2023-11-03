@@ -1,13 +1,13 @@
 <?php
 
-namespace Lunar\Hub\Http\Livewire\Components\Products\ProductTypes;
+namespace Lunar\Hub\Http\Livewire\Components\Products\Reviews;
 
 use Lunar\Models\Attribute;
 use Lunar\Models\Product;
-use Lunar\Models\ProductType;
+use Lunar\Models\ProductReview;
 use Lunar\Models\ProductVariant;
 
-class ProductTypeCreate extends AbstractProductType
+class ReviewCreate extends AbstractReview
 {
     /**
      * Mount the component.
@@ -16,10 +16,7 @@ class ProductTypeCreate extends AbstractProductType
      */
     public function mount()
     {
-        $this->productType = new ProductType();
-
-        $this->selectedProductAttributes = Attribute::system(Product::class)->get();
-        $this->selectedVariantAttributes = Attribute::system(ProductVariant::class)->get();
+        $this->productReview = new ProductReview();
     }
 
     /**
@@ -30,7 +27,8 @@ class ProductTypeCreate extends AbstractProductType
     protected function rules()
     {
         return [
-            'productType.name' => 'required|string|unique:'.get_class($this->productType).',name',
+            'productReview.title' => 'required|string',
+            'productReview.content' => 'required|string|unique',
         ];
     }
 
@@ -43,18 +41,11 @@ class ProductTypeCreate extends AbstractProductType
     {
         $this->validate();
 
-        $this->productType->save();
-
-        $this->productType->mappedAttributes()->sync(
-            array_merge(
-                $this->selectedProductAttributes->pluck('id')->toArray(),
-                $this->selectedVariantAttributes->pluck('id')->toArray()
-            )
-        );
+        $this->productReview->save();
 
         $this->notify(
-            __('adminhub::catalogue.product-types.show.updated_message'),
-            'hub.product-types.index'
+            __('adminhub::catalogue.reviews.show.updated_message'),
+            'hub.reviews.index'
         );
     }
 
@@ -65,7 +56,7 @@ class ProductTypeCreate extends AbstractProductType
      */
     public function render()
     {
-        return view('adminhub::livewire.components.products.product-types.create')
+        return view('adminhub::livewire.components.products.reviews.create')
             ->layout('adminhub::layouts.base');
     }
 }

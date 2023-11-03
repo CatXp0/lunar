@@ -129,6 +129,7 @@ use Lunar\Hub\Menu\SidebarMenu;
 use Lunar\Hub\Models\Staff;
 use Lunar\Hub\Tables\Builders\CustomersTableBuilder;
 use Lunar\Hub\Tables\Builders\OrdersTableBuilder;
+use Lunar\Hub\Tables\Builders\ProductReviewsTableBuilder;
 use Lunar\Hub\Tables\Builders\ProductsTableBuilder;
 use Lunar\Hub\Tables\Builders\ProductTypesTableBuilder;
 use Lunar\Hub\Tables\Builders\ProductVariantsTableBuilder;
@@ -182,6 +183,7 @@ class AdminHubServiceProvider extends ServiceProvider
             OrdersTableBuilder::class,
             ProductsTableBuilder::class,
             ProductTypesTableBuilder::class,
+            ProductReviewsTableBuilder::class,
             ProductVariantsTableBuilder::class,
         ];
 

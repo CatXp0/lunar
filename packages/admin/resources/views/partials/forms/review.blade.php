@@ -8,16 +8,20 @@
                                name="rating"
                                id="rating"
                                :error="$errors->first('productReview.rating')" />
+            <x-hub::input.text wire:model="productReview.real_rating"
+                               name="rating"
+                               id="rating"
+                               :error="$errors->first('productReview.real_rating')" />
         </x-hub::input.group>
     </div>
 
-    <div x-data="{ view: 'products' }">
-        <div class="p-6 bg-white rounded-b shadow">
-            @if ($view == 'products')
-                @include('adminhub::partials.reviews.attributes', [
-                    'type' => 'products',
-                ])
-            @endif
-        </div>
-    </div>
+{{--    <div x-data="{ view: 'products' }">--}}
+{{--        <div class="p-6 bg-white rounded-b shadow">--}}
+{{--            @if ($view == 'products')--}}
+{{--                @include('adminhub::partials.reviews.attributes', [--}}
+{{--                    'type' => 'products',--}}
+{{--                ])--}}
+{{--            @endif--}}
+{{--        </div>--}}
+{{--    </div>--}}
 </div>

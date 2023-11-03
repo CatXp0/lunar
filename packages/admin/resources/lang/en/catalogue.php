@@ -79,6 +79,13 @@ return [
      */
     'reviews.index.title' => 'Reviews',
     'reviews.index.create_btn' => 'Create Product Review',
+    'reviews.show.updated_message' => 'Product Review updated',
+    'reviews.create.btn_text' => 'Create Product Review',
+    'reviews.show.btn_text' => 'Update Product Review',
+    'reviews.show.title' => 'Edit Product Review',
+    'reviews.show.delete.btn_text' => 'Delete Product Review',
+    'reviews.show.delete.delete_notification' => 'Product Review removed',
+    'reviews.show.delete.confirm_text' => 'Confirm Deletion',
     /**
      * Product type editing.
      */
