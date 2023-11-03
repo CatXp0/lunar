@@ -67,6 +67,7 @@ use Lunar\Hub\Http\Livewire\Components\Products\ProductsIndex;
 use Lunar\Hub\Http\Livewire\Components\Products\ProductTypes\ProductTypeCreate;
 use Lunar\Hub\Http\Livewire\Components\Products\ProductTypes\ProductTypeShow;
 use Lunar\Hub\Http\Livewire\Components\Products\ProductTypes\ProductTypesIndex;
+use Lunar\Hub\Http\Livewire\Components\Products\Tables\ProductReviewsTable;
 use Lunar\Hub\Http\Livewire\Components\Products\Tables\ProductsTable;
 use Lunar\Hub\Http\Livewire\Components\Products\Tables\ProductTypesTable;
 use Lunar\Hub\Http\Livewire\Components\Products\Tables\ProductVariantsTable;
@@ -119,6 +120,9 @@ use Lunar\Hub\Http\Livewire\Components\Settings\Taxes\TaxZonesIndex;
 use Lunar\Hub\Http\Livewire\Components\Tables\Actions\UpdateStatus;
 use Lunar\Hub\Http\Livewire\Components\Tags;
 use Lunar\Hub\Http\Livewire\Dashboard;
+use Lunar\Hub\Http\Livewire\Pages\Products\Reviews\ProductReviewCreate;
+use Lunar\Hub\Http\Livewire\Pages\Products\Reviews\ProductReviewIndex;
+use Lunar\Hub\Http\Livewire\Pages\Products\Reviews\ProductReviewShow;
 use Lunar\Hub\Http\Middleware\Authenticate;
 use Lunar\Hub\Http\Middleware\RedirectIfAuthenticated;
 use Lunar\Hub\Listeners\SetStaffAuthMiddlewareListener;
@@ -362,6 +366,11 @@ class AdminHubServiceProvider extends ServiceProvider
         Livewire::component('hub.components.products.product-types.show', ProductTypeShow::class);
         Livewire::component('hub.components.products.product-types.create', ProductTypeCreate::class);
         Livewire::component('hub.components.products.product-types.table', ProductTypesTable::class);
+
+        Livewire::component('hub.components.products.reviews.index', ProductReviewIndex::class);
+        Livewire::component('hub.components.products.reviews.show', ProductReviewShow::class);
+        Livewire::component('hub.components.products.reviews.create', ProductReviewCreate::class);
+        Livewire::component('hub.components.products.reviews.table', ProductReviewsTable::class);
 
         Livewire::component('hub.components.products.editing.customer-groups', CustomerGroups::class);
 
