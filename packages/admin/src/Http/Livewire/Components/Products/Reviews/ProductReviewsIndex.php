@@ -1,10 +1,10 @@
 <?php
 
-namespace Lunar\Hub\Http\Livewire\Components\Products\ProductTypes;
+namespace Lunar\Hub\Http\Livewire\Components\Products\Reviews;
 
 use Livewire\Component;
 
-class ProductTypesIndex extends Component
+class ProductReviewsIndex extends Component
 {
     /**
      * Render the livewire component.

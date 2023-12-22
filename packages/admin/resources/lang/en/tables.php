@@ -24,7 +24,7 @@ return [
     'headings.brand' => 'Brand',
     'headings.sku' => 'SKU',
     'headings.product_type' => 'Product Type',
-    'headings.review' => 'Product Review',
+    'headings.product_review' => 'Product Review',
     'headings.stock' => 'Stock',
     'headings.product_count' => 'Product Count',
     'headings.product_name' => 'Product Name',

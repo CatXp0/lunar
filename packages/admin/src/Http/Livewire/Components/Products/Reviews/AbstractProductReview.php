@@ -14,7 +14,7 @@ use Lunar\Models\ProductReview;
 use Lunar\Models\ProductType;
 use Lunar\Models\ProductVariant;
 
-abstract class AbstractReview extends Component
+abstract class AbstractProductReview extends Component
 {
     use Notifies;
     use WithLanguages;

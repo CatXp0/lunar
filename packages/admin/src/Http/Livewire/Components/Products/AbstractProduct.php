@@ -870,7 +870,7 @@ abstract class AbstractProduct extends Component
                 ]),
             ],
             [
-                'title' => __('adminhub::menu.product.reviews'),
+                'title' => __('adminhub::menu.product.product-reviews'),
                 'id' => 'reviews',
                 'has_errors' => $this->errorBag->hasAny([
                     'reviews.*',

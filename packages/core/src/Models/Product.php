@@ -125,7 +125,7 @@ class Product extends BaseModel implements SpatieHasMedia
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function reviews()
+    public function productReviews()
     {
         return $this->hasMany(ProductReview::class);
     }

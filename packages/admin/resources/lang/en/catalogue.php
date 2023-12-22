@@ -77,15 +77,15 @@ return [
     /**
      * Reviews listing.
      */
-    'reviews.index.title' => 'Reviews',
-    'reviews.index.create_btn' => 'Create Product Review',
-    'reviews.show.updated_message' => 'Product Review updated',
-    'reviews.create.btn_text' => 'Create Product Review',
-    'reviews.show.btn_text' => 'Update Product Review',
-    'reviews.show.title' => 'Edit Product Review',
-    'reviews.show.delete.btn_text' => 'Delete Product Review',
-    'reviews.show.delete.delete_notification' => 'Product Review removed',
-    'reviews.show.delete.confirm_text' => 'Confirm Deletion',
+    'product-reviews.index.title' => 'Reviews',
+    'product-reviews.index.create_btn' => 'Create Product Review',
+    'product-reviews.show.updated_message' => 'Product Review updated',
+    'product-reviews.create.btn_text' => 'Create Product Review',
+    'product-reviews.show.btn_text' => 'Update Product Review',
+    'product-reviews.show.title' => 'Edit Product Review',
+    'product-reviews.show.delete.btn_text' => 'Delete Product Review',
+    'product-reviews.show.delete.delete_notification' => 'Product Review removed',
+    'product-reviews.show.delete.confirm_text' => 'Confirm Deletion',
     /**
      * Product type editing.
      */

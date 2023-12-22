@@ -120,9 +120,9 @@ use Lunar\Hub\Http\Livewire\Components\Settings\Taxes\TaxZonesIndex;
 use Lunar\Hub\Http\Livewire\Components\Tables\Actions\UpdateStatus;
 use Lunar\Hub\Http\Livewire\Components\Tags;
 use Lunar\Hub\Http\Livewire\Dashboard;
-use Lunar\Hub\Http\Livewire\Pages\Products\Reviews\ProductReviewCreate;
-use Lunar\Hub\Http\Livewire\Pages\Products\Reviews\ProductReviewIndex;
-use Lunar\Hub\Http\Livewire\Pages\Products\Reviews\ProductReviewShow;
+use Lunar\Hub\Http\Livewire\Pages\Products\ProductReviews\ProductReviewCreate;
+use Lunar\Hub\Http\Livewire\Pages\Products\ProductReviews\ProductReviewIndex;
+use Lunar\Hub\Http\Livewire\Pages\Products\ProductReviews\ProductReviewShow;
 use Lunar\Hub\Http\Middleware\Authenticate;
 use Lunar\Hub\Http\Middleware\RedirectIfAuthenticated;
 use Lunar\Hub\Listeners\SetStaffAuthMiddlewareListener;
@@ -367,10 +367,10 @@ class AdminHubServiceProvider extends ServiceProvider
         Livewire::component('hub.components.products.product-types.create', ProductTypeCreate::class);
         Livewire::component('hub.components.products.product-types.table', ProductTypesTable::class);
 
-        Livewire::component('hub.components.products.reviews.index', ProductReviewIndex::class);
-        Livewire::component('hub.components.products.reviews.show', ProductReviewShow::class);
-        Livewire::component('hub.components.products.reviews.create', ProductReviewCreate::class);
-        Livewire::component('hub.components.products.reviews.table', ProductReviewsTable::class);
+        Livewire::component('hub.components.products.product-reviews.index', ProductReviewIndex::class);
+        Livewire::component('hub.components.products.product-reviews.show', ProductReviewShow::class);
+        Livewire::component('hub.components.products.product-reviews.create', ProductReviewCreate::class);
+        Livewire::component('hub.components.products.product-reviews.table', ProductReviewsTable::class);
 
         Livewire::component('hub.components.products.editing.customer-groups', CustomerGroups::class);
 

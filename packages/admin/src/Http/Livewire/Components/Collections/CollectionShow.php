@@ -490,7 +490,7 @@ class CollectionShow extends Component
                 ]),
             ],
             [
-                'title' => __('adminhub::menu.reviews'),
+                'title' => __('adminhub::menu.product-reviews'),
                 'id' => 'reviews',
                 'has_errors' => $this->errorBag->hasAny([
                     'reviews.*',

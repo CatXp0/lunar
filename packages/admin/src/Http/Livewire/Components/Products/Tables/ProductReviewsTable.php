@@ -44,7 +44,7 @@ class ProductReviewsTable extends Table
             TextColumn::make('title')->heading(
                 __('adminhub::tables.headings.title')
             )->url(function ($record) {
-                return route('hub.reviews.show', $record->id);
+                return route('hub.product-reviews.show', $record->id);
             }),
             TextColumn::make('product.name', function ($record) {
                 return $record->translateAttribute('product');

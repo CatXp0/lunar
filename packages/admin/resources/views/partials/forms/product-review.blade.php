@@ -18,7 +18,7 @@
 {{--    <div x-data="{ view: 'products' }">--}}
 {{--        <div class="p-6 bg-white rounded-b shadow">--}}
 {{--            @if ($view == 'products')--}}
-{{--                @include('adminhub::partials.reviews.attributes', [--}}
+{{--                @include('adminhub::partials.product-reviews.attributes', [--}}
 {{--                    'type' => 'products',--}}
 {{--                ])--}}
 {{--            @endif--}}

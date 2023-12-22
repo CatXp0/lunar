@@ -1,6 +1,6 @@
 <?php
 
-namespace Lunar\Hub\Http\Livewire\Pages\Products\Reviews;
+namespace Lunar\Hub\Http\Livewire\Pages\Products\ProductReviews;
 
 use Livewire\Component;
 
@@ -13,7 +13,7 @@ class ProductReviewCreate extends Component
      */
     public function render()
     {
-        return view('adminhub::livewire.pages.products.reviews.create')
+        return view('adminhub::livewire.pages.products.product-reviews.create')
             ->layout('adminhub::layouts.app', [
                 'title' => 'Create Product Review',
             ]);

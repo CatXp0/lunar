@@ -84,10 +84,10 @@ final class SidebarMenu
 
         $productGroup->addItem(function ($menuItem) {
             $menuItem
-                ->name(__('adminhub::menu.sidebar.reviews'))
-                ->handle('hub.reviews')
+                ->name(__('adminhub::menu.sidebar.product-reviews'))
+                ->handle('hub.product-reviews')
                 ->gate('catalogue:manage-products')
-                ->route('hub.reviews.index');
+                ->route('hub.product-reviews.index');
         });
 
         $productGroup->addItem(function ($menuItem) {

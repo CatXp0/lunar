@@ -7,7 +7,7 @@ use Lunar\Models\Product;
 use Lunar\Models\ProductReview;
 use Lunar\Models\ProductVariant;
 
-class ReviewCreate extends AbstractReview
+class ProductReviewCreate extends AbstractProductReview
 {
     /**
      * Mount the component.
@@ -44,8 +44,8 @@ class ReviewCreate extends AbstractReview
         $this->productReview->save();
 
         $this->notify(
-            __('adminhub::catalogue.reviews.show.updated_message'),
-            'hub.reviews.index'
+            __('adminhub::catalogue.product-reviews.show.updated_message'),
+            'hub.product-reviews.index'
         );
     }
 
@@ -56,7 +56,7 @@ class ReviewCreate extends AbstractReview
      */
     public function render()
     {
-        return view('adminhub::livewire.components.products.reviews.create')
+        return view('adminhub::livewire.components.products.product-reviews.create')
             ->layout('adminhub::layouts.base');
     }
 }

@@ -53,7 +53,7 @@ return [
     'ean.label' => 'UPC/EAN',
     'brand.label' => 'Brand',
     'product-type.label' => 'Product Type',
-    'review.label' => 'Product Review',
+    'product-review.label' => 'Product Review',
     'stock.label' => 'Stock',
     'purchasable.label' => 'Purchasability',
     'backorder.label' => 'Backorder',
