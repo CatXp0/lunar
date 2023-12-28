@@ -47,7 +47,7 @@ class ProductReviewsTable extends Table
                 return route('hub.product-reviews.show', $record->id);
             }),
             TextColumn::make('product.name', function ($record) {
-                return $record->translateAttribute('product');
+                return $record->product->translateAttribute('name');
             })->url(function ($record) {
                 return route('hub.products.show', $record->product_id);
             })->heading(
@@ -64,7 +64,7 @@ class ProductReviewsTable extends Table
                 __('adminhub::tables.headings.rating')
             ),
             TextColumn::make('real_rating', function ($record) {
-                return $record->rating;
+                return $record->real_rating;
             })->heading(
                 __('adminhub::tables.headings.real_rating')
             ),

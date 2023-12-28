@@ -14,7 +14,7 @@ class ProductReviewsTableBuilder extends TableBuilder
      */
     public function getData(): iterable
     {
-        $query = ProductReview::query()->withCount(['products']);
+        $query = ProductReview::query()->withCount(['product']);
 
         if ($this->searchTerm) {
             $query->where('title', 'LIKE', '%'.$this->searchTerm.'%');

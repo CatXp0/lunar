@@ -36,6 +36,7 @@ class ProductReviewShow extends AbstractProductReview
             'product-review.content' => [
                 'required',
                 'string',
+                'max:255'
 //                'unique:'.get_class($this->productReview).',name,'.$this->productType->id,
             ],
         ];
@@ -65,44 +66,25 @@ class ProductReviewShow extends AbstractProductReview
         );
     }
 
-//    public function getCanDeleteProperty()
-//    {
-//        return ! $this->isTheOnlyProductType && ! $this->productType->products()->count();
-//    }
-
-    /**
-     * Returns whether this is the only Product type in the system.
-     *
-     * @return bool
-     */
-//    public function getIsTheOnlyProductTypeProperty()
-//    {
-//        return ProductType::count() == 1;
-//    }
+    public function getCanDeleteProperty()
+    {
+        return true;
+    }
 
     /**
      * Delete the variant.
      *
      * @return void
      */
-//    public function delete()
-//    {
-//        if (! $this->canDelete) {
-//            $this->notify(
-//                __('adminhub::catalogue.product-types.show.delete.disabled_message')
-//            );
-//            $this->deleteDialogVisible = false;
-//
-//            return;
-//        }
-//
-//        DB::transaction(fn () => $this->productType->delete());
-//
-//        $this->notify(
-//            __('adminhub::catalogue.product-types.show.delete.delete_notification'),
-//            'hub.product-types.index'
-//        );
-//    }
+    public function delete()
+    {
+        DB::transaction(fn () => $this->productReview->delete());
+
+        $this->notify(
+            __('adminhub::catalogue.product-reviews.show.delete.delete_notification'),
+            'hub.product-reviews.index'
+        );
+    }
 
     /**
      * Render the livewire component.
