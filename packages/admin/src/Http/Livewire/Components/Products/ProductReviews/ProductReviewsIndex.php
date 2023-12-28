@@ -1,6 +1,6 @@
 <?php
 
-namespace Lunar\Hub\Http\Livewire\Components\Products\Reviews;
+namespace Lunar\Hub\Http\Livewire\Components\Products\ProductReviews;
 
 use Livewire\Component;
 
@@ -13,7 +13,7 @@ class ProductReviewsIndex extends Component
      */
     public function render()
     {
-        return view('adminhub::livewire.components.products.product-types.index')
+        return view('adminhub::livewire.components.products.product-reviews.index')
             ->layout('adminhub::layouts.base');
     }
 }

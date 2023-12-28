@@ -1,6 +1,6 @@
 <?php
 
-namespace Lunar\Hub\Http\Livewire\Components\Products\Reviews;
+namespace Lunar\Hub\Http\Livewire\Components\Products\ProductReviews;
 
 use Lunar\Models\Attribute;
 use Lunar\Models\Product;

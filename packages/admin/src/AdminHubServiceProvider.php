@@ -62,6 +62,9 @@ use Lunar\Hub\Http\Livewire\Components\Products\Editing\CustomerGroups;
 use Lunar\Hub\Http\Livewire\Components\Products\Options\OptionCreator;
 use Lunar\Hub\Http\Livewire\Components\Products\Options\OptionSelector;
 use Lunar\Hub\Http\Livewire\Components\Products\ProductCreate;
+use Lunar\Hub\Http\Livewire\Components\Products\ProductReviews\ProductReviewCreate;
+use Lunar\Hub\Http\Livewire\Components\Products\ProductReviews\ProductReviewShow;
+use Lunar\Hub\Http\Livewire\Components\Products\ProductReviews\ProductReviewsIndex;
 use Lunar\Hub\Http\Livewire\Components\Products\ProductShow;
 use Lunar\Hub\Http\Livewire\Components\Products\ProductsIndex;
 use Lunar\Hub\Http\Livewire\Components\Products\ProductTypes\ProductTypeCreate;
@@ -120,9 +123,6 @@ use Lunar\Hub\Http\Livewire\Components\Settings\Taxes\TaxZonesIndex;
 use Lunar\Hub\Http\Livewire\Components\Tables\Actions\UpdateStatus;
 use Lunar\Hub\Http\Livewire\Components\Tags;
 use Lunar\Hub\Http\Livewire\Dashboard;
-use Lunar\Hub\Http\Livewire\Pages\Products\ProductReviews\ProductReviewCreate;
-use Lunar\Hub\Http\Livewire\Pages\Products\ProductReviews\ProductReviewIndex;
-use Lunar\Hub\Http\Livewire\Pages\Products\ProductReviews\ProductReviewShow;
 use Lunar\Hub\Http\Middleware\Authenticate;
 use Lunar\Hub\Http\Middleware\RedirectIfAuthenticated;
 use Lunar\Hub\Listeners\SetStaffAuthMiddlewareListener;
@@ -367,7 +367,7 @@ class AdminHubServiceProvider extends ServiceProvider
         Livewire::component('hub.components.products.product-types.create', ProductTypeCreate::class);
         Livewire::component('hub.components.products.product-types.table', ProductTypesTable::class);
 
-        Livewire::component('hub.components.products.product-reviews.index', ProductReviewIndex::class);
+        Livewire::component('hub.components.products.product-reviews.index', ProductReviewsIndex::class);
         Livewire::component('hub.components.products.product-reviews.show', ProductReviewShow::class);
         Livewire::component('hub.components.products.product-reviews.create', ProductReviewCreate::class);
         Livewire::component('hub.components.products.product-reviews.table', ProductReviewsTable::class);

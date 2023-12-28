@@ -1,6 +1,6 @@
 <?php
 
-namespace Lunar\Hub\Http\Livewire\Components\Products\Reviews;
+namespace Lunar\Hub\Http\Livewire\Components\Products\ProductReviews;
 
 use Illuminate\Support\Collection;
 use Livewire\Component;
@@ -44,19 +44,19 @@ abstract class AbstractProductReview extends Component
      */
     public $reviewSearch = '';
 
-    public function addAttribute($id)
-    {
-        $this->selectedReviews = $this->selectedReviews->push(
-            $this->getAvailableReviews()->first(fn ($att) => $att->id == $id)
-        );
-    }
+//    public function addAttribute($id)
+//    {
+//        $this->selectedReviews = $this->selectedReviews->push(
+//            $this->getAvailableReviews()->first(fn ($att) => $att->id == $id)
+//        );
+//    }
 
-    public function removeAttribute($id)
-    {
-        $index = $this->selectedReviews->search(fn ($att) => $att->id == $id);
-
-        $this->selectedReviews->forget($index);
-    }
+//    public function removeAttribute($id)
+//    {
+//        $index = $this->selectedReviews->search(fn ($att) => $att->id == $id);
+//
+//        $this->selectedReviews->forget($index);
+//    }
 
     public function updatedReviewSearch()
     {
@@ -86,9 +86,9 @@ abstract class AbstractProductReview extends Component
      */
     public function deselectAll()
     {
-        $this->selectedReviews = $this->selectedReviews->reject(function ($review) use ($groupId) {
-            return ! $review->system && $att->attribute_group_id == $groupId;
-        });
+//        $this->selectedReviews = $this->selectedReviews->reject(function ($review) use ($groupId) {
+//            return ! $review->system && $att->attribute_group_id == $groupId;
+//        });
     }
 
     /**

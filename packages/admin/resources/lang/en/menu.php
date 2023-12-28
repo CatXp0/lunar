@@ -24,6 +24,8 @@ return [
     'product.image' => 'Image',
     'product.availability' => 'Availability',
     'product.product-reviews' => 'Reviews',
+    'product.reviews' => 'Reviews',
+    'product.review' => 'Review',
     'product.variants' => 'Variants',
     'product.pricing' => 'Pricing',
     'product.inventory' => 'Inventory',

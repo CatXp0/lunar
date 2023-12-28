@@ -77,7 +77,7 @@ return [
     /**
      * Reviews listing.
      */
-    'product-reviews.index.title' => 'Reviews',
+    'product-reviews.index.title' => 'Product Reviews',
     'product-reviews.index.create_btn' => 'Create Product Review',
     'product-reviews.show.updated_message' => 'Product Review updated',
     'product-reviews.create.btn_text' => 'Create Product Review',
